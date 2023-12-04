@@ -18,6 +18,7 @@ user/usys.S
 *.zip
 xv6.out*
 .vagrant/
+.vscode/
 submissions/
 ph
 barrier
