@@ -100,3 +100,14 @@ uint64 sys_trace(void)
 
   return 0;
 }
+
+uint64 sys_sysinfo(void)
+{
+  uint64 si; // user ptr to struct sysinfo
+
+  argaddr(0, &si);
+  if (si < 0)
+    return -1;
+
+  return sinfo(si);
+}
